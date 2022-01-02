@@ -15,9 +15,23 @@ namespace FoodProject
         public Form1()
         {
             InitializeComponent();
+            slidePanel.Height = button1.Height;
+            slidePanel.Top = button1.Top;
+            firstCustomControl1.BringToFront();
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            slidePanel.Height = button1.Height;
+            slidePanel.Top = button1.Top;
+            firstCustomControl1.BringToFront();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            slidePanel.Height = button2.Height;
+            slidePanel.Top = button2.Top;
+            mySecondCustomControl1.BringToFront();
+        }
     }
 }
